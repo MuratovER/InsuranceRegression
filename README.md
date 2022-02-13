@@ -29,7 +29,7 @@ Windows
 python -m venv venv
 ```
 
-#### Запуск
+#### Запуск venv
 Windows
 ```
 venv\scripts\activate
