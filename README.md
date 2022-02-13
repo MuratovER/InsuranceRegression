@@ -49,7 +49,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Запуск 
+## Запуск 
 
 (venv) PS C:\InsuranceRegression> python main.py
 
