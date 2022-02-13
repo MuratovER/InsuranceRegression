@@ -39,6 +39,3 @@ def find_regression(data, month):
     model.fit(X, Y)
 
     return  '%.2f' % model.predict([[month]])[0][0]
-
-
-

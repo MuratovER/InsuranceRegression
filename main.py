@@ -1,3 +1,5 @@
+import json
+
 from peewee import *
 from logic.models import *
 from loguru import logger
@@ -21,5 +23,7 @@ with db:
         for month in range(1, 13):
             allmonths[month] = float(find_regression(data, month))
         print('For all months prediction is\n {}'.format(allmonths))
+        with open("allmonths.json", "w") as file:
+            json.dump(allmonths, file)
     else:
         print('Wrong input')
